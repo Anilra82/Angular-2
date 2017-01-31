@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,21 +7,5 @@ import {Component, Input} from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
-
-  name = {
-    fName:'RAJ',
-    lName:'SINGH'
-  }
-
-  clickMe(e){
-    alert("I AM CLICKED!!!")
-    console.log("I am clicked!!!")
-  }
-
-  alertMe(e){
-    alert("DANGER!!!")
-    console.log("Danger!!!")
-
-  }
 
 }

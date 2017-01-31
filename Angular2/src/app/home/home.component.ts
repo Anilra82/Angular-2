@@ -7,16 +7,5 @@ import {Component, Input, Output, EventEmitter} from '@angular/core';
 })
 export class HomeComponent {
   title_home = 'home works!';
-  @Input() myName;
-  @Output() clickYo = new EventEmitter();
-  @Output() alertYo = new EventEmitter();
-
-  fireClick(e){
-    this.clickYo.emit();
-  }
-
-  fireAlert(e){
-    this.alertYo.emit();
-  }
 
 }
