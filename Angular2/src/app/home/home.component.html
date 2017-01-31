@@ -1,0 +1,19 @@
+<p>
+  home works!
+</p>
+
+<ng-content></ng-content> <br>
+
+<h4>Title: {{title_home}}</h4>
+
+<label>
+  Title:
+</label>
+
+<input value= {{title_home}} [(ngModel)]="title_home"> <!--Interpolation and two way data data binding-->
+
+<button (click)="clickMe()">Click</button>  <!--Event binding-->
+
+<button (click)="alertMe()">Alert</button>  <!--Event binding-->
+
+
