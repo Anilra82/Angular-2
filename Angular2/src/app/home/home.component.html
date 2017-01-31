@@ -1,19 +1,9 @@
-<p>
-  home works!
-</p>
+<h4>{{title_home}}</h4>
 
-<ng-content></ng-content> <br>
+<p> My name is {{myName.fName}} {{myName.lName}}</p>
 
-<h4>Title: {{title_home}}</h4>
+<p>Custom event binding / Input & Output</p>
 
-<label>
-  Title:
-</label>
+<button (click)="fireClick($event)">Click</button> <!--button has click event attached to it-->
 
-<input value= {{title_home}} [(ngModel)]="title_home"> <!--Interpolation and two way data data binding-->
-
-<button (click)="clickMe()">Click</button>  <!--Event binding-->
-
-<button (click)="alertMe()">Alert</button>  <!--Event binding-->
-
-
+<button (click)="fireAlert($event)">Alert</button>  <!--button has click event attached to it-->

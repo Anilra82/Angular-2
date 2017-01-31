@@ -1,23 +1,22 @@
-import {Component, OnInit, Input} from '@angular/core';
+import {Component, Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
-  title_home = 'Angular 2';
+export class HomeComponent {
+  title_home = 'home works!';
+  @Input() myName;
+  @Output() clickYo = new EventEmitter();
+  @Output() alertYo = new EventEmitter();
 
-  constructor() { }
-
-  ngOnInit() {
+  fireClick(e){
+    this.clickYo.emit();
   }
 
-  clickMe(){
-    console.log("I am clicked!!!")
+  fireAlert(e){
+    this.alertYo.emit();
   }
 
-  alertMe(){
-    alert("DANGER!!!")
-  }
 }

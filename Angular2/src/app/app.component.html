@@ -2,6 +2,5 @@
   {{title}}
 </h1>
 
-
-<app-home>Angular 2 Transclusion using ng-content.</app-home>
+<app-home [myName] = "name" (clickYo)="clickMe($event)" (alertYo)="alertMe($event)"></app-home>
 
