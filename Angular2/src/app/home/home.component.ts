@@ -7,5 +7,10 @@ import {Component, Input, Output, EventEmitter} from '@angular/core';
 })
 export class HomeComponent {
   title_home = 'home works!';
+  imgLink;
+
+  constructor(){
+    this.imgLink = "http://lorempixel.com/800/400/";
+  }
 
 }

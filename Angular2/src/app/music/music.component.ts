@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
+import {AppService} from "../app.service";
 
 @Component({
   selector: 'app-music',
   templateUrl: './music.component.html',
   styleUrls: ['./music.component.css']
 })
-export class MusicComponent implements OnInit {
+export class MusicComponent{
 
-  constructor() { }
 
-  ngOnInit() {
+  constructor(private logger: AppService) {}
+
+  logIt(){
+    this.logger.log();
   }
 
 }

@@ -11,6 +11,8 @@ import { TestComponent } from './test/test.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { MusicComponent } from './music/music.component';
 import { AboutComponent } from './about/about.component';
+import {AppService} from "./app.service";
+import {DataService} from "./data.service";
 
 @NgModule({
   declarations: [
@@ -30,7 +32,7 @@ import { AboutComponent } from './about/about.component';
     HttpModule,
     routing
   ],
-  providers: [],
+  providers: [AppService, DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
