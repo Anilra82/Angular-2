@@ -13,6 +13,7 @@ import { MusicComponent } from './music/music.component';
 import { AboutComponent } from './about/about.component';
 import {AppService} from "./app.service";
 import {DataService} from "./data.service";
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import {DataService} from "./data.service";
     CalculatorComponent,
     MusicComponent,
     AboutComponent,
+    FormComponent,
 
 
   ],
